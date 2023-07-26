@@ -59,17 +59,18 @@ if __name__ == '__main__':
     download_folder = '/Users/lzl/Downloads/'
 
     ##############################
-    file_name = 'RandomSort'  # 必须写
-    repo_description = '🍶 飞书 base ' + '随机排序'  # 填写简介内容
+    file_name = ''  # 必须写
+    repo_description = '🍶 飞书 base ' + ''  # 填写简介内容
     ##############################
 
     zip_file_path = download_folder + file_name + ".zip"
     unzip_and_cd(zip_file_path)
 
+    ##############################
     repository_name = 'BaseScript-' + file_name    # 替换为你的仓库名
-    github_token = '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'
+    github_token = ''
     organization_name = 'ConnectAI-E'  # 替换为你的组织名
-
+    ##############################
 
     # 文件夹路径（直接指向压缩包的路径）
     repository_path = os.path.join(download_folder, file_name)
@@ -87,6 +88,3 @@ if __name__ == '__main__':
     git_push(repository_path, remote_url)
 
     print('自动创建仓库完成！')
-    print('去 https://github.com/ConnectAI-E/Awesome-BaseScript 上更新readme')
-    print('输入：')
-    print('- [Connect-Prompt](https://github.com/ConnectAI-E/BaseScript-' + file_name + ') - 使用OpenAI生成字段数据 ![GitHub Repo stars](https://img.shields.io/github/stars/ConnectAI-E/BaseScript-' + file_name + ')')
