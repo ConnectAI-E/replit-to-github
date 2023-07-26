@@ -62,7 +62,7 @@ if __name__ == '__main__':
     file_name = ''  # 必须写
     repo_description = '🍶 飞书 base ' + ''  # 填写简介内容
     repository_name = 'BaseScript-' + file_name    # 替换为你的仓库名
-    github_token = ''
+    github_token = ''    # github账号的token
     organization_name = 'ConnectAI-E'  # 替换为你的组织名
     ##############################
 
