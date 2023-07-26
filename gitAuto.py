@@ -61,16 +61,13 @@ if __name__ == '__main__':
     ##############################
     file_name = ''  # 必须写
     repo_description = '🍶 飞书 base ' + ''  # 填写简介内容
-    ##############################
-
-    zip_file_path = download_folder + file_name + ".zip"
-    unzip_and_cd(zip_file_path)
-
-    ##############################
     repository_name = 'BaseScript-' + file_name    # 替换为你的仓库名
     github_token = ''
     organization_name = 'ConnectAI-E'  # 替换为你的组织名
     ##############################
+
+    zip_file_path = download_folder + file_name + ".zip"
+    unzip_and_cd(zip_file_path)
 
     # 文件夹路径（直接指向压缩包的路径）
     repository_path = os.path.join(download_folder, file_name)
